@@ -1,51 +1,100 @@
-body {background-color: #33383e;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-main {
+body {
+    background-color: #33383e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  main {
     display: grid;
     color: #9f05ce;
-}
-
-h1 {text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
     color: #bf14f3;
-    margin-bottom: .5%;
-}
-
-header p{ color: aliceblue;
-margin-top: 1%;
-text-align: center;
-}
-.container  {
+    margin-bottom: 0.5%;
+  }
+  
+  header p {
+    color: aliceblue;
+    margin-top: 1%;
+    text-align: center;
+  }
+  
+  .container {
     display: flex;
-    flex-direction:row ;
-    background-color:  #33383e;
+    flex-direction: row;
+    background-color: #33383e;
     flex-wrap: wrap;
     margin: 20px;
     padding: 10px;
-}
-
-
-.card {
+  }
+  
+  .card {
     display: flex;
-    flex: 1 1 calc(33.333% - 60px);
+    flex: 1 1 calc(33.333% - 70px);
     margin: 10px;
+    margin-top: 2em;
     flex-direction: column;
-    background-color:  #33383e;
+    background-color: #33383e;
     border: 3px dashed white;
     padding: 10px;
-}
-h3 {
+  }
+
+  .code-content {border-radius: 3%;
+  }
+
+  .card:hover, card h3:hover {
+    box-shadow:inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+    }
+
+  h3 {
+    font-size: 2em;
     text-align: center;
-    color: aliceblue;}
+    background-color: #33383e;
+    color: #e866ec;
+    border: 2px solid white;
+    position: relative;
+    margin-top: -10%;
+    margin-bottom: -3%;
+    border-radius: 2em;
+    padding: 1%;
+  }
+  h4 {
+    text-align: center;
+  }
 
-.card p {
-    padding: 5px;
-}
-.code-content { background-color: #9f05ce;
-color: aliceblue
-}
+  .card p {
+    padding:.5em;
+    color: #e866ec;
+    font-size: 1em;
+  }
+  
+  .code-content {
+    background: linear-gradient(rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%);
+    color: white;
+    flex-grow: 1;
+    display: flex; /* Make the code-content a flex container */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 10px;
+  }
+  
+  pre {
+    display: flex;
+    align-items: center; /* Center items vertically within pre */
+    justify-content: center; /* Center items horizontally within pre */
+  }
+  
+  code {
+    font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+  }
+  
+  footer {
+    color: white;
+  }
 
-footer{
-    color:white
-}
+  @media screen {
+    
+    
+  }
